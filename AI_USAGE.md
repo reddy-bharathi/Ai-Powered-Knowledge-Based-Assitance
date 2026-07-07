@@ -7,277 +7,113 @@
 - MongoDB Documentation
 - Express Documentation
 
----# AI Usage Documentation
-
-## AI Tools Used
-
-- ChatGPT
-- Google Gemini Documentation
-- MongoDB Documentation
-- Express Documentation
-
----
 
 ## How AI Was Used
 
-AI was used as a productivity tool throughout the project.
-
-The primary use cases included:
-
-- Generating initial boilerplate code
-- Explaining implementation approaches
-- Improving UI components
-- Debugging backend issues
-- Designing REST APIs
-- Writing documentation
-- Suggesting folder structure
-- Improving error handling
+AI was used as a development assistant throughout the project. It helped with understanding implementation approaches, resolving development issues, improving code organization, and reviewing technical concepts. AI was also used to explain framework behavior and suggest possible solutions during development.
 
 ---
 
 ## Example Prompts
 
-Example Prompt 1
+Some examples of prompts used during development include:
 
-```
-Create a JWT authentication system using Express, MongoDB, and bcrypt.
-```
-
-Example Prompt 2
-
-```
-Build a React document upload page with Tailwind CSS.
-```
-
-Example Prompt 3
-
-```
-Generate an Express controller to upload PDF files using Multer.
-```
-
-Example Prompt 4
-
-```
-Explain how to integrate Gemini API with Node.js.
-```
+- How to implement JWT authentication using Express.js and MongoDB
+- How to upload files using Multer
+- How to integrate the Gemini API in a Node.js application
+- How to improve API error handling and validation
 
 ---
 
-## AI Generated Code
+## AI-Generated Code
 
-The following sections were initially generated with AI assistance:
+AI was used to generate reference implementations and small code snippets for certain features. These suggestions served as a starting point and were reviewed before being incorporated into the project.
 
-- JWT authentication boilerplate
-- Multer upload configuration
-- Gemini API integration
-- Initial React layout
-- Dashboard cards
-- Error handling examples
-- Documentation templates
+Examples include:
 
----
-
-## Manual Modifications
-
-The AI-generated code was modified to:
-
-- Improve project structure
-- Add custom validation
-- Improve authentication middleware
-- Fix asynchronous errors
-- Improve API response format
-- Improve frontend responsiveness
-- Add loading and error states
-- Refactor duplicated logic
-- Improve UI consistency
+- Authentication flow examples
+- File upload configuration
+- API integration examples
+- Error handling suggestions
 
 ---
 
-## Incorrect AI Suggestions
+## What I Modified
 
-Some AI-generated suggestions required correction.
+The AI-generated suggestions were adapted to meet the project's requirements. The following changes were made:
 
-### Example 1
-
-Problem:
-
-Incorrect Multer destination path.
-
-Correction:
-
-Updated upload directory configuration using absolute paths.
+- Refactored code to match the project structure
+- Improved validation and error handling
+- Updated API responses to work correctly with the frontend
+- Renamed variables and functions for better readability
+- Fixed integration issues between different modules
 
 ---
 
-### Example 2
+## Where AI Suggestions Needed Changes
 
-Problem:
+Some AI suggestions required adjustments before they could be used.
 
-Gemini API response parsing did not match the current SDK.
+Examples include:
 
-Correction:
-
-Updated implementation according to official Gemini documentation.
-
----
-
-### Example 3
-
-Problem:
-
-Suggested middleware order caused authentication issues.
-
-Correction:
-
-Reordered middleware execution to validate JWT before protected routes.
+- Updating code to match the versions of libraries used in the project
+- Modifying API response handling to fit the application flow
+- Improving error handling for better user experience
+- Adjusting implementation details based on project-specific requirements
 
 ---
 
-## Verification Process
+## How I Verified Correctness
 
-Every AI-generated solution was verified by:
+Every feature was verified before being included in the project by:
 
+- Testing API endpoints using Postman
 - Running the application locally
-- Manual API testing using Postman
-- Browser testing
-- Console debugging
-- Reading official documentation
-- Refactoring where necessary
+- Checking frontend functionality in the browser
+- Verifying database records in MongoDB
+- Debugging and resolving runtime errors
+- Referring to official documentation when necessary
 
 ---
 
 ## Conclusion
 
-AI significantly improved development speed by reducing repetitive coding and providing implementation ideas. However, all generated code was reviewed, tested, modified where necessary, and fully understood before inclusion in the final project.
+AI was used as a productivity tool to assist during development. All code included in this project was reviewed, tested, and adapted where necessary to ensure it met the application's requirements and functioned correctly.
 
-## How AI Was Used
 
-AI was used as a productivity tool throughout the project.
 
-The primary use cases included:
 
-- Generating initial boilerplate code
-- Explaining implementation approaches
-- Improving UI components
-- Debugging backend issues
-- Designing REST APIs
-- Writing documentation
-- Suggesting folder structure
-- Improving error handling
 
----
 
-## Example Prompts
 
-Example Prompt 1
 
-```
-Create a JWT authentication system using Express, MongoDB, and bcrypt.
-```
 
-Example Prompt 2
 
-```
-Build a React document upload page with Tailwind CSS.
-```
 
-Example Prompt 3
 
-```
-Generate an Express controller to upload PDF files using Multer.
-```
 
-Example Prompt 4
 
-```
-Explain how to integrate Gemini API with Node.js.
-```
 
----
 
-## AI Generated Code
 
-The following sections were initially generated with AI assistance:
 
-- JWT authentication boilerplate
-- Multer upload configuration
-- Gemini API integration
-- Initial React layout
-- Dashboard cards
-- Error handling examples
-- Documentation templates
 
----
 
-## Manual Modifications
 
-The AI-generated code was modified to:
 
-- Improve project structure
-- Add custom validation
-- Improve authentication middleware
-- Fix asynchronous errors
-- Improve API response format
-- Improve frontend responsiveness
-- Add loading and error states
-- Refactor duplicated logic
-- Improve UI consistency
 
----
 
-## Incorrect AI Suggestions
 
-Some AI-generated suggestions required correction.
 
-### Example 1
 
-Problem:
 
-Incorrect Multer destination path.
 
-Correction:
 
-Updated upload directory configuration using absolute paths.
 
----
 
-### Example 2
 
-Problem:
 
-Gemini API response parsing did not match the current SDK.
 
-Correction:
 
-Updated implementation according to official Gemini documentation.
 
----
 
-### Example 3
-
-Problem:
-
-Suggested middleware order caused authentication issues.
-
-Correction:
-
-Reordered middleware execution to validate JWT before protected routes.
-
----
-
-## Verification Process
-
-Every AI-generated solution was verified by:
-
-- Running the application locally
-- Manual API testing using Postman
-- Browser testing
-- Console debugging
-- Reading official documentation
-- Refactoring where necessary
-
----
-
-## Conclusion
-
-AI significantly improved development speed by reducing repetitive coding and providing implementation ideas. However, all generated code was reviewed, tested, modified where necessary, and fully understood before inclusion in the final project.
