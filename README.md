@@ -138,7 +138,7 @@ project-root
 ### Clone Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/reddy-bharathi/Ai-Powered-Knowledge-Based-Assitance
 ```
 
 ### Backend Setup
@@ -155,11 +155,9 @@ Example:
 ```env
 PORT=5000
 
-MONGODB_URI=your_mongodb_connection_string
+MONGODB_URI=mongodb://localhost:27017/
 
-JWT_SECRET=your_secret_key
-
-GEMINI_API_KEY=your_gemini_api_key
+GEMINI_API_KEY=AQ.Ab8RN6KTZtZqddyTlHbGzcMse26fB1ZxIj7YS6qmXp0UrCE1ZQ
 ```
 
 Run backend
@@ -190,7 +188,6 @@ Backend
 |-----------|-------------|
 | PORT | Backend server port |
 | MONGODB_URI | MongoDB connection string |
-| JWT_SECRET | Secret key for JWT |
 | GEMINI_API_KEY | Google Gemini API Key |
 
 ---
@@ -277,11 +274,9 @@ GET /dashboard
 
 - Streaming AI responses
 - Docker deployment
-- Unit and integration testing
-- Redis caching
 - Pagination
 - Role-based access control
 - Multi-document querying
 - AI conversation summarization
 - File versioning
-- Cloud storage integration
+
