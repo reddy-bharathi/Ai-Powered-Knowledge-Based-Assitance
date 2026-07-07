@@ -1,6 +1,6 @@
 # Debug Notes
 
-This document describes real issues encountered during development and how they were resolved.
+This document describes real issues encountered during developing the AI Powered Assistance and how they were resolved.
 
 ---
 
