@@ -43,13 +43,12 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-100 via-slate-100 to-indigo-100 flex items-center justify-center px-5">
+    <div className="min-h-screen bg-gradient-to-br from-blue-100 via-slate-100 to-indigo-100 flex items-center justify-center px-6 py-10">
+      <div className="w-full max-w-md bg-white rounded-3xl shadow-2xl border border-slate-200 p-10">
 
-      <div className="w-full max-w-md bg-white rounded-3xl shadow-2xl p-10 border border-gray-100">
-
-        <div className="text-center">
-
-          <div className="w-20 h-20 rounded-full bg-blue-600 flex items-center justify-center mx-auto mb-5 text-white text-3xl font-bold">
+        {/* Header */}
+        <div className="text-center space-y-4">
+          <div className="w-20 h-20 rounded-full bg-blue-600 flex items-center justify-center mx-auto text-white text-3xl font-bold shadow-lg">
             AI
           </div>
 
@@ -57,20 +56,19 @@ const Login = () => {
             Welcome Back
           </h1>
 
-          <p className="text-gray-500 mt-2">
+          <p className="text-slate-500 text-base">
             AI Knowledge Base Assistant
           </p>
-
         </div>
 
+        {/* Form */}
         <form
           onSubmit={handleSubmit}
-          className="space-y-6 mt-10"
+          className="mt-10 space-y-8"
         >
-
-          <div>
-
-            <label className="block font-medium mb-2">
+          {/* Email */}
+          <div className="space-y-3">
+            <label className="block text-sm font-semibold text-slate-700">
               Email Address
             </label>
 
@@ -81,19 +79,34 @@ const Login = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full rounded-xl border border-gray-300 px-4 py-3 focus:border-blue-600 focus:ring-2 focus:ring-blue-300"
+              className="
+                w-full
+                rounded-2xl
+                border
+                border-slate-300
+                bg-white
+                px-5
+                py-4
+                text-slate-700
+                placeholder:text-slate-400
+                shadow-sm
+                transition-all
+                duration-200
+                focus:border-blue-600
+                focus:ring-4
+                focus:ring-blue-100
+                focus:outline-none
+              "
             />
-
           </div>
 
-          <div>
-
-            <label className="block font-medium mb-2">
+          {/* Password */}
+          <div className="space-y-3">
+            <label className="block text-sm font-semibold text-slate-700">
               Password
             </label>
 
             <div className="relative">
-
               <input
                 type={showPassword ? "text" : "password"}
                 name="password"
@@ -101,13 +114,39 @@ const Login = () => {
                 value={formData.password}
                 onChange={handleChange}
                 required
-                className="w-full rounded-xl border border-gray-300 px-4 py-3 pr-12 focus:border-blue-600 focus:ring-2 focus:ring-blue-300"
+                className="
+                  w-full
+                  rounded-2xl
+                  border
+                  border-slate-300
+                  bg-white
+                  px-5
+                  py-4
+                  pr-14
+                  text-slate-700
+                  placeholder:text-slate-400
+                  shadow-sm
+                  transition-all
+                  duration-200
+                  focus:border-blue-600
+                  focus:ring-4
+                  focus:ring-blue-100
+                  focus:outline-none
+                "
               />
 
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
-                className="absolute right-4 top-4 text-gray-500"
+                className="
+                  absolute
+                  right-5
+                  top-1/2
+                  -translate-y-1/2
+                  text-slate-500
+                  hover:text-blue-600
+                  transition
+                "
               >
                 {showPassword ? (
                   <EyeOff size={20} />
@@ -115,44 +154,55 @@ const Login = () => {
                   <Eye size={20} />
                 )}
               </button>
-
             </div>
-
           </div>
 
+          {/* Login Button */}
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-xl font-semibold flex items-center justify-center gap-2 shadow-lg transition"
+            className="
+              w-full
+              bg-blue-600
+              hover:bg-blue-700
+              hover:-translate-y-0.5
+              transition-all
+              duration-200
+              text-white
+              py-4
+              rounded-2xl
+              font-semibold
+              text-lg
+              flex
+              items-center
+              justify-center
+              gap-5
+              shadow-lg
+              disabled:opacity-70
+              disabled:cursor-not-allowed
+            "
           >
-
-            <LogIn size={20} />
+            <LogIn size={22} />
 
             {loading ? "Logging In..." : "Login"}
-
           </button>
-
         </form>
 
-        <div className="text-center mt-8">
-
-          <p className="text-gray-600">
-
+        {/* Register Link */}
+        <div className="mt-10 text-center">
+          <p className="text-slate-800">
             Don't have an account?
 
             <Link
               to="/register"
-              className="text-blue-600 font-semibold ml-2 hover:underline"
+              className="ml-2 text-blue-600 font-semibold hover:text-blue-700 hover:underline transition"
             >
               Register
             </Link>
-
           </p>
-
         </div>
 
       </div>
-
     </div>
   );
 };
